@@ -36,8 +36,10 @@ placement of the bus.
 - Any move that would cause the bus to exit the carpark must be ignored.
 
 ### Pictures
-![alt text](https://github.com/charles-benedito/accordo-code-challenge/blob/master/start.jpg)
-![alt text](https://github.com/charles-benedito/accordo-code-challenge/blob/master/end.png)
+Beginning of planning
+![beginning of planning](https://github.com/charles-benedito/accordo-code-challenge/blob/master/start.jpg)
+Project finished 
+![project finished](https://github.com/charles-benedito/accordo-code-challenge/blob/master/end.png)
 
 ### Installing
 
