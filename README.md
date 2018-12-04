@@ -37,9 +37,11 @@ placement of the bus.
 
 ### Pictures
 Beginning of planning
+
 ![beginning of planning](https://github.com/charles-benedito/accordo-code-challenge/blob/master/start.jpg)
 
 Project finished 
+
 ![project finished](https://github.com/charles-benedito/accordo-code-challenge/blob/master/end.png)
 
 ### Installing

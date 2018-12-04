@@ -84,6 +84,14 @@ describe('Buss Car Park Simulator', () => {
     });
 
     describe('Method report', () => {
+        it('should return a object', () => {
+            expect(simulator.report()).to.be.a('object');
+        });
+
+        it('should return 3 keys', () => {
+            expect(Object.keys(simulator.report())).to.have.lengthOf(3);
+        });
+
         it('should have not empity position at start', () => {
             expect(simulator.report()).to.not.be.empty;
         });
@@ -100,10 +108,6 @@ describe('Buss Car Park Simulator', () => {
             simulator.place(x, y, facing);
             expect(simulator.report()).to.deep.equal({x: x, y: y, facing: facing});
         });
-
-        it('should return 3 keys', () => {
-            expect(Object.keys(simulator.report())).to.have.lengthOf(3);
-        });
     });
 
     describe('Method move', () => {
@@ -116,7 +120,7 @@ describe('Buss Car Park Simulator', () => {
             expect(simulator.x).to.equal(2);
             expect(simulator.y).to.equal(3);
         });
-        
+
         it('should move one unit to south when facing south', () => {
             let x = 2,
                 y = 2,
@@ -200,6 +204,17 @@ describe('Buss Car Park Simulator', () => {
         });
     });
 
+    describe('Method isPlaced', () => {
+        it('should return true after bus be placed', () => {
+            simulator.place(2, 2, 'north');
+            expect(simulator.isPlaced()).to.be.true;
+        });
+
+        it('should return false before bus be placed', () => {
+            expect(simulator.isPlaced()).to.be.false;
+        });
+    });
+
     describe('Integrations', () => {
         it('should report position 0, 1, north', () => {
             simulator.place(0, 0, 'north');
@@ -222,6 +237,9 @@ describe('Buss Car Park Simulator', () => {
             expect(simulator.report()).to.deep.equal({x: 3, y: 3, facing: 'north'});
         });
     });
+
+
+    
     
 
 });
