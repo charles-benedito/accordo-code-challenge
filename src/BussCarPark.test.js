@@ -8,6 +8,42 @@ describe('Buss Car Park Simulator', () => {
         simulator = new BussCarPark();
     });
 
+    describe('Smoke tests', () => {
+        it('Should exist BussCarPark class', () => {
+            expect(BussCarPark).to.exist;
+        });
+
+        it('Should exist the method place', () => {
+            expect(simulator.place).to.exist;
+            expect(simulator.place).to.be.a('function');
+        });
+
+        it('Should exist the method report', () => {
+            expect(simulator.report).to.exist;
+            expect(simulator.report).to.be.a('function');
+        });
+
+        it('Should exist the method move', () => {
+            expect(simulator.move).to.exist;
+            expect(simulator.move).to.be.a('function');
+        });
+
+        it('Should exist the method right', () => {
+            expect(simulator.right).to.exist;
+            expect(simulator.right).to.be.a('function');
+        });
+
+        it('Should exist the method left', () => {
+            expect(simulator.left).to.exist;
+            expect(simulator.left).to.be.a('function');
+        });
+
+        it('Should exist the method isPlaced', () => {
+            expect(simulator.isPlaced).to.exist;
+            expect(simulator.isPlaced).to.be.a('function');
+        });
+    });
+
     describe('Method place', () => {
         it("should set position x", function() {
             let x = 1,

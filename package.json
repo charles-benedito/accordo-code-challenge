@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node ./dist",
     "test": "./node_modules/.bin/mocha-webpack \"src/**/*.test.js\"",
+    "tdd": "./node_modules/.bin/mocha-webpack \"src/**/*.test.js\" --watch",
     "webpack-build": "./node_modules/.bin/webpack",
     "webpack-watch": "./node_modules/.bin/webpack --watch"
   },
